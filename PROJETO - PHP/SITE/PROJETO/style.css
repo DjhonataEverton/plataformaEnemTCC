@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+/*----------Tela Inicial----------*/
+
+.pagina_inicial{
+    background-image: linear-gradient(360deg, #006680, #008fb3);
+    width: 100vw;
+    height: 100vh;
+}
+
+.pagina_inicial input{
+    transition: 0.4s;
+}
+
+.cabecalho_principal{
+    background-color: rgb(24, 24, 24);
+    padding: 1.5rem;
+    text-align: end;
+    box-shadow: 5px 1px 10px rgb(61, 61, 61);
+}
+#info, #log_cad{
+    background-color:#006680;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+}
+ #log_cad:hover, #info:hover{
+    background-color:#008fb3;
+}
+.btn_simulado{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+#btn_simulado{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    cursor: pointer;
+    padding: 15px;
+    width: 30%;
+    height: 12%;
+    background-color: #006680;
+    color: #152c31;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style:solid;
+    border-color: #173136;
+    box-shadow: 1px 2px 10px #00728fb4;
+}
+
+#btn_simulado:hover{
+    color: #1f3f46;
+    background-color: #007592;
+    border-color: #1f3f46;
+    font-size: 2.52vw;
+    width: 30.2%;
+    height: 12.2%;
+}
+
+/*----------Cadastro----------*/
+
+.cadastro{
+    background-image: linear-gradient(360deg, #006680, #008fb3);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_box{
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #4747473d;
+    background-color: #c4c4c4;
+}
+
+.txt_input{
+    margin-top: 25px;
+}
+.txt_input input{
+    font-size: 20px;
+    color: #777777;
+    padding: 10px;
+    background-color: #c4c4c4;
+    width: 370px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #777777;
+    outline: none;
+}
+.txt_input::placeholder{
+    font-size: 20px;
+}
+
+.btn_input #login{
+    font-size: 30px;
+    font-weight: 400;
+    background-color: #007592;
+    color: white;
+    width: 175px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px #6d6d6d5d;
+    cursor: pointer;
+}
+.btn_input #login:hover{
+    background-color: #008fb3;
+    transition: 0.15s;
+}
+.btn_input #cadastrar{
+    background-color: #c4c4c4;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #777777;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+}
+.btn_input #cadastrar:hover{
+    color: #9c9c9c;
+    transition: 0.15s;
+}
+
+/*----------Configuração----------*/
+
+.tela_config{
+    background-image: linear-gradient(360deg, #006680, #008fb3);
+    width: 100vw;
+    height: 100vh;
+}
+.tela_config input{
+    transition: 0.4s;
+}
+.tela_config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config_box_conteudo{
+    background-color: #C4C4C4;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #4747473d;
+    position: relative;
+}
+.config_box_conteudo div{
+    border-bottom: 1px solid #777777;
+    width: 500px;
+    margin: auto;
+    padding: 5px;  
+}
+h1{
+    color: #777777;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#temas{
+    margin-top: 26px;
+}
+#botoes{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+#cancel_config{
+    font-size: 30px;
+    color: #777777;
+    background-color: #c4c4c4;
+    width: 150px;
+    height: 70px;
+    border: 3px solid #777777;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#cancel_config:hover{
+    background-color: #d1d1d1;
+}
+#ini_simulado{
+    font-size: 30px;
+    color: white;
+    background-color: #006680;
+    border: none;
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#ini_simulado:hover{
+    background-color: #007592;
+}
+
+/*----------Perfil----------*/
+
+.conteudo_principal{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(360deg, #006680, #008fb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_dados{
+    width: 1826px;
+    height: 875px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #585858;
+}
+.dados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    border-bottom: 1px solid #777777;
+}
+#btn_perfil{
+    width: 350px;
+    height: 100px;
+    font-size: 36px;
+    border: none;
+    border-radius: 10px;
+    background-color: #006680;
+}
+#btn_sair{
+    background-color: #C4C4C4;
+    border: none;
+    font-size: 40px;
+}
+
+.dados > h2{
+    font-size: 40px;
+}

@@ -1,0 +1,57 @@
+<?php
+CONEXAO_COM_O_BANCO
+$sql="SELECT * FROM temas";
+$result = mysqli_query($conexao, $sql);
+
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho_principal">
+        <div class="btns_cabecalho">
+            <input type="button" value="Informações" id="info" onclick="informacoes()">
+            <input type="button" value="Login/Cadastrar" id="log_cad" onclick="login_cad()">
+        </div>
+    </header>
+    <section class="tela_config">
+        <div class="config_box_conteudo">
+            <div id="temas">
+                <h1>Temas</h1>
+                <?php
+                for($i=0;$i<mysqli_num_rows($result);$i++){
+                    $dados = mysqli_fetch_assoc($result);
+
+                ?>
+                <div><?php echo $dados['temas']; ?></div>
+                <?php 
+            }
+            ?>
+            </div>
+            
+            <div id="assuntos">
+                <h1>Assuntos</h1>
+            </div>
+            
+            <div id="config">
+                <h1>Configuração</h1>
+            </div>
+            
+            <section id="botoes">
+                <input id="cancel_config"type="button" value="Cancelar" onclick="cancel_config()"> 
+                <input id="ini_simulado" type="button" value="Iniciar" onclick="iniciar_simulado()">
+            </section>
+            
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

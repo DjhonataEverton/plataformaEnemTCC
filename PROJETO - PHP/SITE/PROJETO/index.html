@@ -1,0 +1,32 @@
+<!--<?php
+session_start();
+if(!$_SESSION['logado']){
+    header('Location: cadastrar.html');
+}
+?> !-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina_inicial"> 
+        <header class="cabecalho_principal">
+            <div class="btns_cabecalho">
+                <input type="button" value="Informações" id="info" onclick="informacoes()">
+                <input type="button" value="Login/Cadastrar" id="log_cad" onclick="login_cad()">
+            </div>
+        </header>
+        <div class="btn_simulado">
+            <input id="btn_simulado" type="button" value="realizar simulado" onclick="simulado()"> 
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
